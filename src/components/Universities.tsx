@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Warehouse, ShoppingCart, Utensils, HardHat, Wheat, CalendarDays, Sparkles, TruckIcon } from 'lucide-react';
+import { Warehouse, ShoppingCart, Utensils, HardHat, Wheat, CalendarDays, Sparkles, Truck as TruckIcon } from 'lucide-react';
 
 const Industries = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
