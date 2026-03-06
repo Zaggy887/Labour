@@ -64,7 +64,7 @@ const ContactForm = () => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": formType === 'company' ? "contact" : "student-contact",
+          "form-name": formType === 'company' ? "contact" : "worker-contact",
           ...formData
         })
       });
@@ -112,7 +112,7 @@ const ContactForm = () => {
             <span className={accentColor}>Start Your Journey</span> With Us
           </h2>
           <p className="fade-in text-lg text-gray-600">
-            Whether you're a company looking for talent or a student seeking opportunities, we're here to help.
+            Whether you're an employer looking for reliable workers or a worker seeking opportunities, we're here to help.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ const ContactForm = () => {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
-              I'm a Company
+              I'm an Employer
             </button>
             <button
               onClick={() => setFormType('student')}
@@ -137,7 +137,7 @@ const ContactForm = () => {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
-              I'm a Student
+              I'm a Worker
             </button>
           </div>
         </div>
@@ -153,13 +153,13 @@ const ContactForm = () => {
         ) : (
           <div className="max-w-2xl mx-auto">
             <form
-              name={formType === 'company' ? "contact" : "student-contact"}
+              name={formType === 'company' ? "contact" : "worker-contact"}
               method="POST"
               onSubmit={handleSubmit}
               className="fade-in bg-white rounded-xl shadow-lg p-8"
               data-netlify="true"
             >
-              <input type="hidden" name="form-name" value={formType === 'company' ? "contact" : "student-contact"} />
+              <input type="hidden" name="form-name" value={formType === 'company' ? "contact" : "worker-contact"} />
               <div hidden>
                 <label>
                   Don't fill this out: <input name="bot-field" />
@@ -231,9 +231,9 @@ const ContactForm = () => {
                     className={`w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 ${
                       formType === 'student' ? 'focus:ring-purple-500 focus:border-purple-500' : 'focus:ring-sky-400 focus:border-sky-400'
                     }`}
-                    placeholder={formType === 'company' 
-                      ? "e.g., Employment type (Full-time, Part-time), Role (Accountant, Finance), Industry, Location"
-                      : "e.g., University, Course, Year Level, Areas of Interest"
+                    placeholder={formType === 'company'
+                      ? "e.g., Employment type (Full-time, Part-time, Casual), Role (Warehouse hand, Retail assistant), Industry, Location"
+                      : "e.g., Experience, Areas of Interest (Warehousing, Retail, Hospitality, Construction), Availability"
                     }
                   />
                 </div>

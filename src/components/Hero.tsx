@@ -62,13 +62,13 @@ const Hero = () => {
       <div className={`container mx-auto px-4 relative z-10 text-white ${imagesLoaded ? 'animate-fade-in-slow' : 'opacity-0'}`}>
         <div className="max-w-3xl">
           <h1 className="text-4xl sm:text-6xl font-bold leading-snug sm:leading-tight mb-5 sm:mb-6 drop-shadow-sm animate-slide-up">
-            Connecting Melbourne's Top{" "}
-            <span className="text-[#A5D8FF] drop-shadow-sm">Student Talent</span>
+            Connecting Melbourne's{" "}
+            <span className="text-[#A5D8FF] drop-shadow-sm">Skilled Workers</span>{" "}
+            with Businesses
           </h1>
 
           <p className="text-base sm:text-xl text-white/90 mb-8 sm:mb-10 drop-shadow-sm animate-fade-in-slower">
-            ONLYUgrads specialises in connecting leading companies with exceptional
-            university students across all commerce and business discplines.
+            We connect reliable, hard-working individuals with businesses across warehousing, retail, hospitality, construction, agriculture, events, cleaning, and logistics.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto animate-slide-up">

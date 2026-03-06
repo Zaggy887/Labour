@@ -25,28 +25,28 @@ const Articles = () => {
 
   const articles = [
   {
-    title: 'Corporate Crisis: Employee Turnover Solutions',
-    image: 'https://images.pexels.com/photos/8062287/pexels-photo-8062287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Learn how integrating university students into your workforce can address high turnover rates and build a sustainable talent pipeline.',
-    link: 'https://www.shrm.org/topics-tools/news/all-things-work/reducing-employee-turnover',
-    alt: 'Office team discussing ideas',
-    date: 'March 18, 2025',
+    title: 'The Growing Demand for Flexible Labour',
+    image: 'https://images.pexels.com/photos/4491881/pexels-photo-4491881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'Explore how businesses across warehousing, hospitality, and retail are adapting to flexible workforce models to meet seasonal and operational demands.',
+    link: 'https://www.mckinsey.com/featured-insights/future-of-work/the-future-of-work-after-covid-19',
+    alt: 'Workers in warehouse',
+    date: 'February 2025',
   },
   {
-    title: 'Students Are Changing the Corporate World',
-    image: 'https://images.pexels.com/photos/9783812/pexels-photo-9783812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Discover how university students are bringing technological proficiency, adaptability, and fresh perspectives that are reshaping traditional business models.',
-    link: 'https://www.aacsb.edu/insights/articles/2024/06/equipping-business-students-for-a-dynamic-future',
-    alt: 'Students collaborating with professionals',
-    date: 'June 18, 2024',
+    title: 'Why Skilled Workers Matter in Today\'s Economy',
+    image: 'https://images.pexels.com/photos/5331895/pexels-photo-5331895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'Discover why experienced workers in construction, logistics, and agriculture are essential for driving business growth and operational efficiency.',
+    link: 'https://www.weforum.org/stories/2023/05/future-jobs-2023-skills/',
+    alt: 'Construction workers',
+    date: 'January 2025',
   },
   {
-    title: 'Why You Need to Hire University Students',
-    image: 'https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg',
-    desc: 'University students bring fresh perspectives, innovative ideas, and digital-native skills that can transform your business operations and culture.',
-    link: 'https://www.gradleaders.com/hireuniversitytalent/',
-    alt: 'Young professionals brainstorming',
-    date: 'May 25, 2023',
+    title: 'Building Strong Teams in Essential Industries',
+    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'Learn how businesses in essential industries are building reliable teams by focusing on worker satisfaction, training, and long-term retention.',
+    link: 'https://www.forbes.com/sites/forbeshumanresourcescouncil/2024/01/30/building-resilient-teams/',
+    alt: 'Team collaboration',
+    date: 'December 2024',
   }
 ]
 ;
@@ -85,7 +85,7 @@ const Articles = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="fade-in mb-6">Industry Insights</h2>
           <p className="fade-in text-lg text-gray-600">
-            Discover how university students are transforming the corporate landscape and why your business should be part of this evolution.
+            Learn how businesses are adapting to workforce trends and why partnering with reliable workers is essential for success.
           </p>
         </div>
 

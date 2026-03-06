@@ -67,11 +67,11 @@ const Pricing = () => {
         <div className="container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="fade-in text-sky-500 text-4xl font-bold mb-4">
-              An Investment in Exceptional Talent
+              An Investment in Quality Workers
             </h2>
             <p className="fade-in text-sky-500/90 text-lg">
-              ONLYUgrads connects you with high-potential candidates who drive results.
-              With a transparent model and strong customer feedback, we are with you every step of the process.
+              WorkForceConnect connects you with reliable, hardworking individuals who get the job done.
+              With a transparent model and commitment to quality, we're with you every step of the process.
             </p>
           </div>
 
@@ -87,10 +87,10 @@ const Pricing = () => {
               </div>
               <ul className="space-y-4 text-sky-500/90">
                 {[
-                  'Tailored pricing for internships and short-term roles',
-                  'Discounts for multiple hires',
-                  '30-day guarantee. Refund or free replacement',
-                  '50% refund if hire leaves before 90 days',
+                  'Flexible pricing for casual and short-term roles',
+                  'Volume discounts for multiple placements',
+                  '30-day guarantee - refund or free replacement',
+                  '50% refund if worker leaves before 90 days',
                   'Ongoing support after placement',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start text-base leading-relaxed">
@@ -124,11 +124,11 @@ const Pricing = () => {
               <div className="fade-in max-w-3xl mx-auto text-center">
                 <h3 className="text-3xl font-bold text-sky-500 mb-4">Referral Program</h3>
                 <p className="text-lg text-sky-500/90 mb-6">
-                  Know a company that could benefit from our services? Refer them and earn rewards for every successful hire.
+                  Know a business that needs reliable workers? Refer them and earn rewards for every successful placement.
                 </p>
 
                 <p className="text-center text-fade-in text-lg text-sky-500/90 mb-4">
-                  Our referral program rewards you for helping us connect top talent with great companies. You play a vital role in creating opportunities, and we believe that deserves recognition.
+                  Our referral program rewards you for helping us connect quality workers with great businesses. You play a vital role in creating opportunities, and we believe that deserves recognition.
                 </p>
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 mb-6 text-left">
                   <h4 className="text-2xl font-bold text-sky-500 mb-6 text-center">Why Refer?</h4>
@@ -156,7 +156,7 @@ const Pricing = () => {
                       <div>
                         <h5 className="text-lg font-semibold text-sky-500">Make Connections</h5>
                         <p className="text-sky-500/90">
-                          Help great students and companies find each other. Your introduction can create lasting value for both parties.
+                          Help quality workers and businesses find each other. Your introduction can create lasting value for both parties.
                         </p>
                       </div>
                     </div>
@@ -192,7 +192,7 @@ const Pricing = () => {
                 <div className="flex items-center space-x-3">
                   <FacebookFilled />
                   <div className="bg-sky-50 rounded-full px-4 py-1">
-                    <span className="text-sky-500 text-sm">Melbourne Student Society</span>
+                    <span className="text-sky-500 text-sm">Melbourne Worker Network</span>
                   </div>
                 </div>
 
@@ -201,7 +201,7 @@ const Pricing = () => {
                 </h2>
 
                 <p className="text-gray-600 text-lg">
-                  Be part of Melbourne's fastest-growing student professional network. Connect with industry leaders, mentors, and ambitious students.
+                  Be part of Melbourne's growing workforce community. Connect with employers, fellow workers, and industry opportunities.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
@@ -231,7 +231,7 @@ const Pricing = () => {
                   <span>Join Our Community</span>
                 </a>
                 <p className="text-gray-500 text-sm text-center md:text-right">
-                  Help students launch their careers and be part of a growing network of industry experts
+                  Connect with workers and businesses, and be part of a growing employment network
                 </p>
               </div>
             </div>
