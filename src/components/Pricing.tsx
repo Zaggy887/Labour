@@ -1,34 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import {
-  ClipboardCheck,
-  Phone,
-  Users,
-  CheckSquare,
-  Gift,
-  ArrowRight,
-  Share2,
-  MessageCircle,
-  Calendar,
-  Briefcase,
-  UserPlus,
-  Zap,
-  Target,
-} from 'lucide-react';
-import ReferralForm from './ReferralForm';
-
-// Custom filled Facebook icon component
-const FacebookFilled = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
-    viewBox="0 0 24 24"
-    fill="#3399FF"
-    stroke="none"
-  >
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-  </svg>
-);
+import { CheckSquare } from 'lucide-react';
 
 const Pricing = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -145,69 +116,6 @@ const Pricing = () => {
             <p className="text-gray-600 text-sm">
               All programs include a free initial consultation. Flexible payment plans available.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section relative py-16 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg"
-            alt="Community background"
-            className="w-full h-full object-cover opacity-5"
-          />
-        </div>
-
-        <div className="container relative z-10 px-4">
-          <div className="max-w-5xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg">
-            <div className="md:flex items-center justify-between space-y-8 md:space-y-0">
-              <div className="md:w-7/12 space-y-6">
-                <div className="flex items-center space-x-3">
-                  <FacebookFilled />
-                  <div className="bg-sky-50 rounded-full px-4 py-1">
-                    <span className="text-sky-500 text-sm">Melbourne Worker Network</span>
-                  </div>
-                </div>
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-                  Join Our <span className="text-sky-400">Fitness Community</span>
-                </h2>
-
-                <p className="text-gray-600 text-lg">
-                  Connect with other young adults on their fitness journey. Share progress, get motivation, and celebrate wins together.
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                  <div className="flex items-center space-x-3 bg-gray-100 rounded-xl p-4 transition-all duration-300 hover:bg-gray-200">
-                    <Target className="w-6 h-6 text-sky-400" />
-                    <span className="text-gray-700">Opportunities</span>
-                  </div>
-                  <div className="flex items-center space-x-3 bg-gray-100 rounded-xl p-4 transition-all duration-300 hover:bg-gray-200">
-                    <UserPlus className="w-6 h-6 text-sky-400" />
-                    <span className="text-gray-700">Networking & Events</span>
-                  </div>
-                  <div className="flex items-center space-x-3 bg-gray-100 rounded-xl p-4 transition-all duration-300 hover:bg-gray-200">
-                    <MessageCircle className="w-6 h-6 text-sky-400" />
-                    <span className="text-gray-700">Active Discussions</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="md:w-4/12 flex flex-col items-center md:items-end space-y-4">
-                <a
-                  href="https://www.facebook.com/share/g/1Jfa3s7CHz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full md:w-auto bg-sky-400 hover:bg-sky-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg"
-                >
-                  <Share2 className="w-5 h-5" />
-                  <span>Join Our Community</span>
-                </a>
-                <p className="text-gray-500 text-sm text-center md:text-right">
-                  Be part of a supportive community dedicated to health, fitness, and personal growth
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
