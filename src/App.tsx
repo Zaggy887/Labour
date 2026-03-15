@@ -6,7 +6,6 @@ import Process from "./components/Process";
 import Statistics from "./components/Statistics";
 import Programs from "./components/Universities";
 import Articles from "./components/Articles";
-import ContactForm from "./components/ContactForm";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
@@ -38,7 +37,6 @@ function App() {
         <Statistics />
         <Programs />
         <Articles />
-        <ContactForm />
         <Pricing />
         <Footer />
       </div>
