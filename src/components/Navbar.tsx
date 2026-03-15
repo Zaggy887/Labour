@@ -94,19 +94,17 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="/" className="text-2xl font-bold">
-          <span className={isScrolled ? 'text-black' : 'text-white'}>ONLY</span>
-          <span className="text-[#5BB6FF]">U</span>
-          <span className={isScrolled ? 'text-black' : 'text-white'}>grads</span>
+          <span className={isScrolled ? 'text-black' : 'text-white'}>Coach </span>
+          <span className="text-[#5BB6FF]">Yitzcy</span>
         </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center space-x-6">
           {navLink("about", "About")}
-          {navLink("process", "Process")}
-          {navLink("universities", "Universities")}
-          {navLink("articles", "Insights")}
+          {navLink("process", "How It Works")}
+          {navLink("programs", "Programs")}
+          {navLink("results", "Results")}
           {navLink("pricing", "Pricing")}
-          {navLink("referral", "Referral")}
           <button
             onClick={() => scrollToSection("contact")}
             className={`px-6 py-2 rounded-full text-white transition-all duration-300 ${
@@ -145,11 +143,10 @@ const Navbar = () => {
 
         <div className="h-full flex flex-col items-center justify-center space-y-6 px-6 animate-mobile-nav">
           {navLink("about", "About", true)}
-          {navLink("process", "Process", true)}
-          {navLink("universities", "Universities", true)}
-          {navLink("articles", "Insights", true)}
+          {navLink("process", "How It Works", true)}
+          {navLink("programs", "Programs", true)}
+          {navLink("results", "Results", true)}
           {navLink("pricing", "Pricing", true)}
-          {navLink("referral", "Referral", true)}
           <button
             onClick={() => scrollToSection("contact")}
             className="mt-4 bg-[#5BB6FF] text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-[#48A3EB] transition"

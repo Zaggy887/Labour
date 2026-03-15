@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Warehouse, ShoppingCart, Utensils, HardHat, Wheat, CalendarDays, Sparkles, Truck as TruckIcon } from 'lucide-react';
+import { Dumbbell, Users, Calendar, Heart, Target, TrendingUp } from 'lucide-react';
 
-const Industries = () => {
+const Programs = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,75 +24,56 @@ const Industries = () => {
     };
   }, []);
 
-  const industries = [
+  const programs = [
     {
-      icon: Warehouse,
-      name: 'Warehousing',
-      color: '#4A90E2',
+      icon: Dumbbell,
+      name: 'Strength Training',
+      description: 'Build muscle and power',
     },
     {
-      icon: ShoppingCart,
-      name: 'Retail',
-      color: '#E94B3C',
+      icon: Heart,
+      name: 'Weight Loss',
+      description: 'Sustainable fat loss',
     },
     {
-      icon: Utensils,
-      name: 'Hospitality',
-      color: '#F5A623',
+      icon: Target,
+      name: 'Athletic Performance',
+      description: 'Sport-specific training',
     },
     {
-      icon: HardHat,
-      name: 'Construction',
-      color: '#7B68EE',
-    },
-    {
-      icon: Wheat,
-      name: 'Agriculture',
-      color: '#50C878',
-    },
-    {
-      icon: CalendarDays,
-      name: 'Events',
-      color: '#FF6B9D',
-    },
-    {
-      icon: Sparkles,
-      name: 'Cleaning',
-      color: '#00CED1',
-    },
-    {
-      icon: TruckIcon,
-      name: 'Logistics',
-      color: '#FF8C00',
+      icon: TrendingUp,
+      name: 'Beginner Friendly',
+      description: 'Start from anywhere',
     },
   ];
 
   return (
     <section
-      id="industries"
+      id="programs"
       style={{ backgroundColor: '#5BB6FF' }}
       className="section text-white py-16"
       ref={sectionRef}
     >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="fade-in text-white text-3xl font-bold mb-4">Industries We Serve</h2>
+          <h2 className="fade-in text-white text-3xl font-bold mb-4">Training Programs</h2>
           <p className="fade-in text-white text-lg">
-            We connect reliable workers with businesses across a wide range of industries throughout Melbourne.
+            Customized online training programs designed to fit your goals, schedule, and lifestyle. All programs include personalized coaching and ongoing support.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {industries.map((industry, index) => {
-            const Icon = industry.icon;
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {programs.map((program, index) => {
+            const Icon = program.icon;
             return (
               <div
                 key={index}
-                className="fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105"
+                className="fade-in bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105"
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <Icon className="w-12 h-12 mx-auto mb-3 text-white" />
-                <h3 className="text-white font-semibold text-lg">{industry.name}</h3>
+                <Icon className="w-16 h-16 mx-auto mb-4 text-white" />
+                <h3 className="text-white font-bold text-xl mb-2">{program.name}</h3>
+                <p className="text-white/80">{program.description}</p>
               </div>
             );
           })}
@@ -101,31 +82,31 @@ const Industries = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="fade-in flex flex-col items-center text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
-              <Warehouse className="w-8 h-8 text-white" />
+              <Calendar className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-white text-xl font-semibold mb-2">Wide Network</h3>
+            <h3 className="text-white text-xl font-semibold mb-2">Flexible Scheduling</h3>
             <p className="text-white">
-              We maintain connections with workers across all major industries, ready to meet your staffing needs.
+              Train on your schedule with workouts that fit your busy life. Morning, afternoon, or evening - you choose.
             </p>
           </div>
 
           <div className="fade-in flex flex-col items-center text-center" style={{ transitionDelay: '0.2s' }}>
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
-              <HardHat className="w-8 h-8 text-white" />
+              <Users className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-white text-xl font-semibold mb-2">Experienced Workers</h3>
+            <h3 className="text-white text-xl font-semibold mb-2">Weekly Check-Ins</h3>
             <p className="text-white">
-              We connect you with motivated individuals who have the skills and work ethic to contribute from day one.
+              Regular progress reviews and plan adjustments to keep you on track and motivated throughout your journey.
             </p>
           </div>
 
           <div className="fade-in flex flex-col items-center text-center" style={{ transitionDelay: '0.4s' }}>
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
-              <TruckIcon className="w-8 h-8 text-white" />
+              <Dumbbell className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-white text-xl font-semibold mb-2">Quick Placement</h3>
+            <h3 className="text-white text-xl font-semibold mb-2">Equipment Options</h3>
             <p className="text-white">
-              Our efficient process means you can have workers ready to start within days, not weeks.
+              Programs designed for gym, home, or minimal equipment. Get results wherever you prefer to train.
             </p>
           </div>
         </div>
@@ -134,4 +115,4 @@ const Industries = () => {
   );
 };
 
-export default Industries;
+export default Programs;

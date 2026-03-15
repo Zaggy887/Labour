@@ -29,36 +29,35 @@ const About = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="fade-in mb-6">
-            <span className="text-[#5BB6FF] font-bold">WorkForce</span>
-            <span className="text-[#5BB6FF]">Connect</span>
+            <span className="text-[#5BB6FF] font-bold">Meet Coach Yitzcy</span>
           </h2>
           <p className="fade-in text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
-            Founded in 2025, we specialize in connecting reliable workers with businesses across Melbourne. From warehousing to hospitality, construction to events, we match dedicated individuals with companies looking to build strong, dependable teams. Proudly based in Melbourne's south-east, our services extend to all businesses seeking quality workers.
+            Your dedicated online personal trainer helping young adults in the Jewish community achieve their fitness goals. Build strength, confidence, and lifelong healthy habits from anywhere.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           <div className="fade-in card p-8 flex flex-col items-center text-center">
             <Building className="w-16 h-16 text-[#5BB6FF] mb-4" />
-            <h3 className="text-xl font-bold mb-4">Industry Partnerships</h3>
+            <h3 className="text-xl font-bold mb-4">Personalized Programs</h3>
             <p className="text-gray-600">
-              We work closely with businesses across multiple sectors to understand their workforce needs and connect them with reliable, hard-working individuals.
+              Custom workout and nutrition plans tailored to your goals, schedule, and lifestyle. Train on your terms with expert guidance every step of the way.
             </p>
           </div>
 
           <div className="fade-in card p-8 flex flex-col items-center text-center" style={{ transitionDelay: '0.2s' }}>
             <Users className="w-16 h-16 text-[#5BB6FF] mb-4" />
-            <h3 className="text-xl font-bold mb-4">Worker Support</h3>
+            <h3 className="text-xl font-bold mb-4">Community Support</h3>
             <p className="text-gray-600">
-              We connect motivated workers from warehousing, retail, hospitality, construction, agriculture, events, cleaning, and logistics sectors with quality employers.
+              Join a supportive community of young adults working toward similar goals. Accountability, motivation, and encouragement from people who understand your journey.
             </p>
           </div>
 
           <div className="fade-in card p-8 flex flex-col items-center text-center" style={{ transitionDelay: '0.4s' }}>
             <Award className="w-16 h-16 text-[#5BB6FF] mb-4" />
-            <h3 className="text-xl font-bold mb-4">Quality Matching</h3>
+            <h3 className="text-xl font-bold mb-4">Proven Results</h3>
             <p className="text-gray-600">
-              Our thorough screening process ensures we match dedicated workers with businesses, creating successful long-term employment relationships.
+              Evidence-based training methods combined with consistent support to help you build the body and confidence you've always wanted.
             </p>
           </div>
         </div>

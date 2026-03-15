@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { TrendingUp, Users2, Banknote, Building2 } from 'lucide-react';
+import { TrendingUp, Users as Users2, Banknote, Building2 } from 'lucide-react';
 
 const Statistics = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -27,65 +27,65 @@ const Statistics = () => {
   return (
     <section className="section bg-gradient-to-b from-blue-50 to-white py-12" ref={sectionRef}>
       <div className="container text-center">
-        <h2 className="text-4xl font-extrabold text-blue-800 mb-4">Our Promise</h2>
+        <h2 className="text-4xl font-extrabold text-blue-800 mb-4">Why Train With Me</h2>
         <p className="text-xl text-blue-600 mb-10 max-w-3xl mx-auto">
-          Partner with us to transform your workforce and drive sustainable growth
+          Experience the benefits of professional online coaching designed for your success
         </p>
         
         <div className="grid md:grid-cols-4 gap-8">
-          {/* Productivity Boost */}
+          {/* Personalized Approach */}
           <div className="fade-in stat-card group">
             <div className="w-20 h-20 mx-auto mb-6 bg-[#5BB6FF] rounded-2xl shadow-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
               <TrendingUp className="w-10 h-10 text-white" />
             </div>
             <div className="text-3xl font-bold text-blue-600 mb-2"></div>
             <div className="text-xl text-blue-800 font-semibold mb-2">
-              Boost Productivity
+              Personalized Plans
             </div>
             <p className="text-blue-600">
-              Fresh perspectives and innovative approaches drive efficiency
+              Custom programs tailored specifically to your goals and lifestyle
             </p>
           </div>
-          
-          {/* Team Growth */}
+
+          {/* Accountability */}
           <div className="fade-in stat-card group" style={{transitionDelay: '0.2s'}}>
             <div className="w-20 h-20 mx-auto mb-6 bg-[#5BB6FF] rounded-2xl shadow-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
               <Users2 className="w-10 h-10 text-white" />
             </div>
             <div className="text-3xl font-bold text-blue-600 mb-2"></div>
             <div className="text-xl text-blue-800 font-semibold mb-2">
-              Team Satisfaction
+              Accountability
             </div>
             <p className="text-blue-600">
-              Enhanced workplace culture and collaboration
+              Regular check-ins and support to keep you motivated and on track
             </p>
           </div>
-          
-          {/* Cost Savings */}
+
+          {/* Flexibility */}
           <div className="fade-in stat-card group" style={{transitionDelay: '0.4s'}}>
             <div className="w-20 h-20 mx-auto mb-6 bg-[#5BB6FF] rounded-2xl shadow-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
               <Banknote className="w-10 h-10 text-white" />
             </div>
             <div className="text-3xl font-bold text-blue-600 mb-2"></div>
             <div className="text-xl text-blue-800 font-semibold mb-2">
-              Cost Reduction
+              Flexible Training
             </div>
             <p className="text-blue-600">
-              Lower recruitment, wages and time expenses
+              Train anywhere, anytime with programs that fit your schedule
             </p>
           </div>
-          
-          {/* Retention */}
+
+          {/* Results */}
           <div className="fade-in stat-card group" style={{transitionDelay: '0.6s'}}>
             <div className="w-20 h-20 mx-auto mb-6 bg-[#5BB6FF] rounded-2xl shadow-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
               <Building2 className="w-10 h-10 text-white" />
             </div>
             <div className="text-3xl font-bold text-blue-600 mb-2"></div>
             <div className="text-xl text-blue-800 font-semibold mb-2">
-              Retention Rate
+              Proven Results
             </div>
             <p className="text-blue-600">
-              Long-term workforce stability and growth
+              Evidence-based methods that deliver real, lasting transformations
             </p>
           </div>
         </div>

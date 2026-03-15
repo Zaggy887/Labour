@@ -62,13 +62,12 @@ const Hero = () => {
       <div className={`container mx-auto px-4 relative z-10 text-white ${imagesLoaded ? 'animate-fade-in-slow' : 'opacity-0'}`}>
         <div className="max-w-3xl">
           <h1 className="text-4xl sm:text-6xl font-bold leading-snug sm:leading-tight mb-5 sm:mb-6 drop-shadow-sm animate-slide-up">
-            Connecting Melbourne's{" "}
-            <span className="text-[#A5D8FF] drop-shadow-sm">Skilled Workers</span>{" "}
-            with Businesses
+            Transform Your Body,{" "}
+            <span className="text-[#A5D8FF] drop-shadow-sm">Elevate Your Life</span>
           </h1>
 
           <p className="text-base sm:text-xl text-white/90 mb-8 sm:mb-10 drop-shadow-sm animate-fade-in-slower">
-            We connect reliable, hard-working individuals with businesses across warehousing, retail, hospitality, construction, agriculture, events, cleaning, and logistics.
+            Online personal training designed for young adults in the Jewish community. Build strength, confidence, and lasting habits with Coach Yitzcy.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto animate-slide-up">
@@ -76,13 +75,13 @@ const Hero = () => {
               href="#contact"
               className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-white bg-[#5BB6FF] hover:bg-[#48A3EB] transition-all shadow-md font-medium sm:font-semibold text-base sm:text-lg text-center"
             >
-              Get Started
+              Start Your Journey
             </a>
             <a
-              href="#referral"
+              href="#programs"
               className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all shadow-md font-medium sm:font-semibold text-base sm:text-lg text-center border border-white/30"
             >
-              Refer & Earn
+              View Programs
             </a>
           </div>
         </div>

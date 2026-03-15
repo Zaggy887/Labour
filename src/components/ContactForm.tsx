@@ -8,7 +8,7 @@ type FormData = {
   message: string;
 };
 
-type FormType = 'company' | 'student';
+type FormType = 'client' | 'inquiry';
 
 const ContactForm = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -20,7 +20,7 @@ const ContactForm = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [formType, setFormType] = useState<FormType>('company');
+  const [formType, setFormType] = useState<FormType>('client');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,7 +64,7 @@ const ContactForm = () => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": formType === 'company' ? "contact" : "worker-contact",
+          "form-name": formType === 'client' ? "contact" : "inquiry-contact",
           ...formData
         })
       });
@@ -90,15 +90,9 @@ const ContactForm = () => {
     }
   };
 
-  const sectionStyle = formType === 'student' 
-    ? 'section bg-gradient-to-b from-purple-50 to-white relative'
-    : 'section bg-gradient-to-b from-sky-100 to-white relative';
-
-  const buttonStyle = formType === 'student'
-    ? 'bg-purple-600 hover:bg-purple-700'
-    : 'bg-sky-400 hover:bg-sky-500';
-
-  const accentColor = formType === 'student' ? 'text-purple-600' : 'text-sky-400';
+  const sectionStyle = 'section bg-gradient-to-b from-sky-100 to-white relative';
+  const buttonStyle = 'bg-sky-400 hover:bg-sky-500';
+  const accentColor = 'text-sky-400';
 
   return (
     <section
@@ -109,37 +103,11 @@ const ContactForm = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="fade-in mb-6">
-            <span className={accentColor}>Start Your Journey</span> With Us
+            <span className={accentColor}>Ready to Transform?</span> Let's Connect
           </h2>
           <p className="fade-in text-lg text-gray-600">
-            Whether you're an employer looking for reliable workers or a worker seeking opportunities, we're here to help.
+            Book your free consultation and start your fitness journey with Coach Yitzcy today.
           </p>
-        </div>
-
-        {/* Form Type Selection */}
-        <div className="max-w-2xl mx-auto mb-8">
-          <div className="flex justify-center gap-4">
-            <button
-              onClick={() => setFormType('company')}
-              className={`px-6 py-3 rounded-full transition-all ${
-                formType === 'company'
-                  ? 'bg-sky-400 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              I'm an Employer
-            </button>
-            <button
-              onClick={() => setFormType('student')}
-              className={`px-6 py-3 rounded-full transition-all ${
-                formType === 'student'
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              I'm a Worker
-            </button>
-          </div>
         </div>
 
         {showConfirmation ? (
@@ -147,19 +115,19 @@ const ContactForm = () => {
             <div className="mb-6">
               <CheckCircle className={`w-24 h-24 ${accentColor} mx-auto`} />
             </div>
-            <h3 className={`text-2xl font-bold ${formType === 'student' ? 'text-purple-800' : 'text-sky-600'} mb-2`}>Thank you!</h3>
-            <p className={formType === 'student' ? 'text-purple-700' : 'text-sky-500'}>We'll be in touch with you shortly.</p>
+            <h3 className="text-2xl font-bold text-sky-600 mb-2">Thank you!</h3>
+            <p className="text-sky-500">I'll be in touch with you shortly to schedule your free consultation!</p>
           </div>
         ) : (
           <div className="max-w-2xl mx-auto">
             <form
-              name={formType === 'company' ? "contact" : "worker-contact"}
+              name="contact"
               method="POST"
               onSubmit={handleSubmit}
               className="fade-in bg-white rounded-xl shadow-lg p-8"
               data-netlify="true"
             >
-              <input type="hidden" name="form-name" value={formType === 'company' ? "contact" : "worker-contact"} />
+              <input type="hidden" name="form-name" value="contact" />
               <div hidden>
                 <label>
                   Don't fill this out: <input name="bot-field" />
@@ -178,9 +146,7 @@ const ContactForm = () => {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className={`w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 ${
-                      formType === 'student' ? 'focus:ring-purple-500 focus:border-purple-500' : 'focus:ring-sky-400 focus:border-sky-400'
-                    }`}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
                   />
                 </div>
 
@@ -195,9 +161,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className={`w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 ${
-                      formType === 'student' ? 'focus:ring-purple-500 focus:border-purple-500' : 'focus:ring-sky-400 focus:border-sky-400'
-                    }`}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
                   />
                 </div>
 
@@ -212,15 +176,13 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className={`w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 ${
-                      formType === 'student' ? 'focus:ring-purple-500 focus:border-purple-500' : 'focus:ring-sky-400 focus:border-sky-400'
-                    }`}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block mb-2 font-medium text-gray-700">
-                    Additional Information
+                    Tell me about your goals
                   </label>
                   <textarea
                     id="message"
@@ -228,13 +190,8 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className={`w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 ${
-                      formType === 'student' ? 'focus:ring-purple-500 focus:border-purple-500' : 'focus:ring-sky-400 focus:border-sky-400'
-                    }`}
-                    placeholder={formType === 'company'
-                      ? "e.g., Employment type (Full-time, Part-time, Casual), Role (Warehouse hand, Retail assistant), Industry, Location"
-                      : "e.g., Experience, Areas of Interest (Warehousing, Retail, Hospitality, Construction), Availability"
-                    }
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-400 focus:border-sky-400"
+                    placeholder="e.g., Weight loss, muscle gain, athletic performance, general fitness. Also mention any experience level and availability."
                   />
                 </div>
               </div>

@@ -67,31 +67,27 @@ const Pricing = () => {
         <div className="container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="fade-in text-sky-500 text-4xl font-bold mb-4">
-              An Investment in Quality Workers
+              Invest in Your Health & Fitness
             </h2>
             <p className="fade-in text-sky-500/90 text-lg">
-              WorkForceConnect connects you with reliable, hardworking individuals who get the job done.
-              With a transparent model and commitment to quality, we're with you every step of the process.
+              Affordable online personal training with flexible payment options. Get professional coaching and support that fits your budget and goals.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="fade-in bg-white/80 backdrop-blur-sm border border-sky-100 rounded-2xl p-10 shadow-lg transition hover:shadow-xl duration-300">
-              <h3 className="text-2xl font-bold text-sky-500 mb-4">Simple. Transparent. Performance-Driven.</h3>
-              <p className="text-sky-500/90 mb-6">
-                We support you through the first 90 days of employment. If a hire doesn't work out, you can get a full refund or free replacement. We stand behind every placement we make.
-              </p>
-              <div className="mb-8 text-center">
-                <p className="text-5xl font-extrabold text-sky-500">13%</p>
-                <p className="text-sky-500/90 text-md">Of first-year salary. Payable only after a successful hire with instalments available.</p>
+              <h3 className="text-2xl font-bold text-sky-500 mb-4">Monthly Coaching</h3>
+              <div className="mb-6 text-center">
+                <p className="text-5xl font-extrabold text-sky-500">$150</p>
+                <p className="text-sky-500/90 text-md">per month</p>
               </div>
               <ul className="space-y-4 text-sky-500/90">
                 {[
-                  'Flexible pricing for casual and short-term roles',
-                  'Volume discounts for multiple placements',
-                  '30-day guarantee - refund or free replacement',
-                  '50% refund if worker leaves before 90 days',
-                  'Ongoing support after placement',
+                  'Personalized workout program',
+                  'Custom nutrition guidance',
+                  'Weekly check-ins and adjustments',
+                  '24/7 messaging support',
+                  'Access to exercise video library',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start text-base leading-relaxed">
                     <CheckSquare className="w-5 h-5 text-sky-400 flex-shrink-0 mr-3 mt-[2px]" />
@@ -104,74 +100,51 @@ const Pricing = () => {
                   href="#contact"
                   className="bg-sky-400 text-white font-semibold py-3 px-6 rounded-full hover:bg-sky-500 transition shadow-md hover:shadow-lg"
                 >
-                  Start Building Your Team
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            <div className="fade-in bg-gradient-to-br from-sky-400 to-sky-500 border border-sky-300 rounded-2xl p-10 shadow-lg transition hover:shadow-xl duration-300 text-white">
+              <div className="text-center mb-4">
+                <span className="bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full">BEST VALUE</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">3-Month Program</h3>
+              <div className="mb-6 text-center">
+                <p className="text-5xl font-extrabold">$400</p>
+                <p className="text-white/90 text-md">one-time payment</p>
+                <p className="text-white/80 text-sm mt-2">Save $50!</p>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  'Everything in Monthly Coaching',
+                  'Detailed progress tracking',
+                  'Bi-weekly video calls',
+                  'Supplement recommendations',
+                  'Priority support access',
+                  'Meal plan templates',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start text-base leading-relaxed">
+                    <CheckSquare className="w-5 h-5 text-white flex-shrink-0 mr-3 mt-[2px]" />
+                    <span className="flex-1">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="#contact"
+                  className="bg-white text-sky-500 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition shadow-md hover:shadow-lg"
+                >
+                  Start Your Transformation
                 </a>
               </div>
             </div>
           </div>
 
-          <div id="referral" className="mt-24 relative rounded-2xl overflow-hidden shadow-lg">
-            <div className="absolute inset-0 z-0">
-              <img
-                src="https://images.pexels.com/photos/27406/pexels-photo-27406.jpg"
-                alt="Referral background"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-white via-sky-50/90 to-sky-100/90"></div>
-            </div>
-
-            <div className="relative z-10 p-10 md:p-16">
-              <div className="fade-in max-w-3xl mx-auto text-center">
-                <h3 className="text-3xl font-bold text-sky-500 mb-4">Referral Program</h3>
-                <p className="text-lg text-sky-500/90 mb-6">
-                  Know a business that needs reliable workers? Refer them and earn rewards for every successful placement.
-                </p>
-
-                <p className="text-center text-fade-in text-lg text-sky-500/90 mb-4">
-                  Our referral program rewards you for helping us connect quality workers with great businesses. You play a vital role in creating opportunities, and we believe that deserves recognition.
-                </p>
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 mb-6 text-left">
-                  <h4 className="text-2xl font-bold text-sky-500 mb-6 text-center">Why Refer?</h4>
-                  <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                      <Gift className="w-8 h-8 text-sky-400" />
-                      <div>
-                        <h5 className="text-lg font-semibold text-sky-500">Earn Rewards</h5>
-                        <p className="text-sky-500/90">
-                          Receive a referral bonus after a successful hire. It's our way of saying thanks for helping us grow.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                      <ArrowRight className="w-8 h-8 text-sky-400" />
-                      <div>
-                        <h5 className="text-lg font-semibold text-sky-500">Quick & Easy</h5>
-                        <p className="text-sky-500/90">
-                          Our short form makes it simple to refer a student or a company. No long process or extra steps required.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                      <Users className="w-8 h-8 text-sky-400" />
-                      <div>
-                        <h5 className="text-lg font-semibold text-sky-500">Make Connections</h5>
-                        <p className="text-sky-500/90">
-                          Help quality workers and businesses find each other. Your introduction can create lasting value for both parties.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="text-sm text-sky-500/80 mt-4 max-w-xl mx-auto">
-                 Terms and conditions apply. Rewards are issued only after a successful placement and completion of the candidate’s probation period. We’ll be in touch if your referral is successful.
-                </p>
-
-                <div className="mt-8">
-                  <ReferralForm />
-                </div>
-              </div>
-            </div>
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-sm">
+              All programs include a free initial consultation. Flexible payment plans available.
+            </p>
           </div>
         </div>
       </section>
@@ -197,11 +170,11 @@ const Pricing = () => {
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-                  Join Our <span className="text-sky-400">Thriving Community</span>
+                  Join Our <span className="text-sky-400">Fitness Community</span>
                 </h2>
 
                 <p className="text-gray-600 text-lg">
-                  Be part of Melbourne's growing workforce community. Connect with employers, fellow workers, and industry opportunities.
+                  Connect with other young adults on their fitness journey. Share progress, get motivation, and celebrate wins together.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
@@ -231,7 +204,7 @@ const Pricing = () => {
                   <span>Join Our Community</span>
                 </a>
                 <p className="text-gray-500 text-sm text-center md:text-right">
-                  Connect with workers and businesses, and be part of a growing employment network
+                  Be part of a supportive community dedicated to health, fitness, and personal growth
                 </p>
               </div>
             </div>

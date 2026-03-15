@@ -25,28 +25,28 @@ const Articles = () => {
 
   const articles = [
   {
-    title: 'The Growing Demand for Flexible Labour',
-    image: 'https://images.pexels.com/photos/4491881/pexels-photo-4491881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Explore how businesses across warehousing, hospitality, and retail are adapting to flexible workforce models to meet seasonal and operational demands.',
-    link: 'https://www.mckinsey.com/featured-insights/future-of-work/the-future-of-work-after-covid-19',
-    alt: 'Workers in warehouse',
-    date: 'February 2025',
+    title: 'Sarah Lost 30lbs in 4 Months',
+    image: 'https://images.pexels.com/photos/4662438/pexels-photo-4662438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'Working full-time and balancing community commitments, Sarah achieved her weight loss goals with a flexible training plan that fit her schedule.',
+    link: '#contact',
+    alt: 'Woman exercising',
+    date: 'Client Success',
   },
   {
-    title: 'Why Skilled Workers Matter in Today\'s Economy',
-    image: 'https://images.pexels.com/photos/5331895/pexels-photo-5331895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Discover why experienced workers in construction, logistics, and agriculture are essential for driving business growth and operational efficiency.',
-    link: 'https://www.weforum.org/stories/2023/05/future-jobs-2023-skills/',
-    alt: 'Construction workers',
-    date: 'January 2025',
+    title: 'David Built Strength & Confidence',
+    image: 'https://images.pexels.com/photos/4162492/pexels-photo-4162492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'From beginner to confident lifter, David transformed his physique and mindset through consistent training and personalized coaching.',
+    link: '#contact',
+    alt: 'Man strength training',
+    date: 'Client Success',
   },
   {
-    title: 'Building Strong Teams in Essential Industries',
-    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Learn how businesses in essential industries are building reliable teams by focusing on worker satisfaction, training, and long-term retention.',
-    link: 'https://www.forbes.com/sites/forbeshumanresourcescouncil/2024/01/30/building-resilient-teams/',
-    alt: 'Team collaboration',
-    date: 'December 2024',
+    title: 'Rachel Gained Energy & Vitality',
+    image: 'https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    desc: 'Struggling with low energy and stress, Rachel found balance through online training that prioritized sustainable habits and overall wellness.',
+    link: '#contact',
+    alt: 'Woman training',
+    date: 'Client Success',
   }
 ]
 ;
@@ -73,19 +73,19 @@ const Articles = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Read more →
+          Start Your Journey →
         </a>
       </div>
     </article>
   );
 
   return (
-    <section id="articles" className="section bg-gradient-to-b from-white to-blue-50" ref={sectionRef}>
+    <section id="results" className="section bg-gradient-to-b from-white to-blue-50" ref={sectionRef}>
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="fade-in mb-6">Industry Insights</h2>
+          <h2 className="fade-in mb-6">Real People, Real Results</h2>
           <p className="fade-in text-lg text-gray-600">
-            Learn how businesses are adapting to workforce trends and why partnering with reliable workers is essential for success.
+            See how young adults in our community have transformed their lives through personalized online training with Coach Yitzcy.
           </p>
         </div>
 

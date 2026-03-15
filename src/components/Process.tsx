@@ -27,27 +27,21 @@ const Process = () => {
   const steps = [
     {
       step: '1',
-      title: 'Fill Out Initial Form',
-      icon: ClipboardCheck,
-      description: 'Complete our simple contact form with your company details and requirements.',
+      title: 'Free Consultation',
+      icon: Phone,
+      description: "We'll discuss your fitness goals, current lifestyle, and create a roadmap for your success.",
     },
     {
       step: '2',
-      title: 'Consultation Call',
-      icon: Phone,
-      description: "We'll discuss your needs, staffing challenges, and the ideal worker profile for your business.",
+      title: 'Custom Plan Created',
+      icon: ClipboardCheck,
+      description: "Receive your personalized workout and nutrition plan designed specifically for your goals and schedule.",
     },
     {
       step: '3',
-      title: 'Worker Selection',
+      title: 'Start Training',
       icon: Users,
-      description: "We'll present you with pre-screened workers matching your specific requirements and industry needs.",
-    },
-    {
-      step: '4',
-      title: 'Onboarding Support',
-      icon: CheckSquare,
-      description: "We'll help ensure a smooth transition and successful start for both you and your new team member.",
+      description: "Begin your transformation with ongoing support, weekly check-ins, and 24/7 access to coaching guidance.",
     },
   ];
 
@@ -55,12 +49,12 @@ const Process = () => {
     <section id="process" className="section bg-white relative" ref={sectionRef}>
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="fade-in text-3xl font-bold mb-4">How Easy It Is To Work With Us</h2>
+          <h2 className="fade-in text-3xl font-bold mb-4">Your Transformation Starts Here</h2>
           <p className="fade-in text-lg text-[#5BB6FF] mb-4">
-            We can have workers ready for you within the next 7 days.
+            Get started with your personalized fitness program in just 3 simple steps.
           </p>
           <p className="fade-in text-gray-600">
-            We're with you throughout every step of the process. Real people from Australia to speak to, real people you can trust.
+            I'm with you every step of the way. Real coaching, real support, real results.
           </p>
         </div>
 
